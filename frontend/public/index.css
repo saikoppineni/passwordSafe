@@ -1,0 +1,264 @@
+#backid {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 28px;
+  }
+  
+  h3 {
+    color: #7f8c8d;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.4;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label.user {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #34495e;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #bdc3c7;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus,
+  input[type="password"]:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.25);
+  }
+  
+  #submitid {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #submitid:hover {
+    background-color: #2980b9;
+  }
+  
+  @media (max-width: 480px) {
+    #backid {
+      max-width: 90%;
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    h3 {
+      font-size: 14px;
+    }
+  }
+
+
+
+
+* {
+    margin: 10;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    margin: 30px;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #t1 {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  #t1:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s ease;
+  }
+  
+  #t2 {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+  }
+  
+  .c1 {
+    padding: 15px 20px;
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    transition: all 0.3s ease;
+    animation: slideIn 0.5s ease-in-out;
+  }
+  
+  .c1:nth-child(5n+1) {
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+  }
+  
+  .c1:nth-child(5n+2) {
+    background: linear-gradient(135deg, #5ee7df, #b490ca);
+  }
+  
+  .c1:nth-child(5n+3) {
+    background: linear-gradient(135deg, #c3cfe2, #c3cfe2);
+  }
+  
+  .c1:nth-child(5n+4) {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+  }
+  
+  .c1:nth-child(5n+5) {
+    background: linear-gradient(135deg, #ff9a9e, #fecfef);
+  }
+  
+  .c2, .c3, .c4 {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  #t8 {
+    padding: 20px;
+    background: #fafafa;
+    border-top: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  #t3 {
+    margin: 0;
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    animation: fadeInDown 0.5s ease-in-out;
+  }
+  
+  label {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    animation: fadeInUp 0.5s ease-in-out;
+  }
+  
+  input:focus {
+    border-color: #4caf50;
+    outline: none;
+  }
+  
+  button {
+    padding: 14px;
+    font-size: 18px;
+    color: #fff;
+    background: #4caf50;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    animation: fadeInUp 0.5s ease-in-out;
+  }
+  
+  button:hover {
+    background: #45a049;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
